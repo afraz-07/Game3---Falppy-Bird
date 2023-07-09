@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#heading{
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    margin: 10px auto;
+    
+}
+
+#intro{
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    margin:10rem  auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(41, 41, 41);
+}
+
+#container{
+    height: 550px;
+    width: 600px;
+    border: 2px solid Black;
+    margin: 0.5rem auto;
+    overflow: hidden;
+    display: block;
+}
+
+
+#bird{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 150px;
+}
+
+#bird img{
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes block {
+    0%{
+        left:540px;
+    }
+    100%{
+        left: -50px;
+    }
+    
+}
+
+#wall{
+    height: 600px;
+    width: 60px;
+    background-image: url(./wall.jpg);
+    background-origin: border-box;
+    position: relative;
+    left: 540px;
+    animation: block 2s linear infinite;
+}
+
+#hole{
+    height: 200px;
+    width: 60px;
+    background-color: white;
+    position: relative;
+    left: 540px;
+    top: -500px;
+    animation: block 2s linear infinite;
+}
+
+#result{
+    display: none;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    margin:10rem  auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(41, 41, 41);
+}
+
+#text{
+    padding: 25px 0;
+    color: white;
+    font-size: large;
+    font-family: 'Play', sans-serif;
+
+}
+
+#btn{
+    font-size: 25px;
+    padding: 3px 25px;
+    background-color: transparent;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    font-family: 'Iceland', cursive;
+}
+
+#btn:hover{
+    background-color: aqua;
+    color: rgb(38, 37, 37);
+}
+
+#result h1{
+    font-family: 'Press Start 2P', cursive;
+    text-shadow:  0 0 3px aqua, 0 0  5px aqua ,  0 0  5px aqua , 0 0  5px aqua;
+    color: rgb(41, 41, 41);
+}
+
+
+@media(max-width:700px){
+    #container{
+        width: 500px;
+    }
+}
+
+@media(max-width:550px){
+    #result{
+        width: 400px;
+    }
+    #container{
+        width: 450px;
+    }
+}
+
+@media(max-width:500px){
+    #container{
+        width: 400px;
+    }
+}
+
+
+@media(max-width:450px){
+    #result{
+        width: 350px;
+    }
+
+    #result h1{
+        font-size: x-large;
+    }
+}
+
+@media(max-width:400px){
+    #result{
+        width: 300px;
+    }
+
+    #result h1{
+        font-size: larger;
+    }
+
+    #btn{
+        font-size: 20px;
+        padding: 3px 25px;
+    }
+}
